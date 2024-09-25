@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none !important;
+}
 
 @font-face {
   font-family: "sukhumvit_setbold";
@@ -56,8 +59,28 @@ body {
   font-family: "sukhumvit_settext";
   background-color: #f7f7f7 !important;
 }
+hr {
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+.btn {
+  font-family: "sukhumvit_setbold";
+}
 .text-primary {
   color: #2d3c68 !important;
+}
+.background-faq {
+  background: linear-gradient(91.66deg, #1b294c 0%, #2e3c69 100%);
+  height: 136.59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-faq h1 {
+  font-family: "sukhumvit_setbold";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 88.87px;
+  color: #fff;
 }
 .nav-fix {
   border-bottom: 1px solid #e6e6e6;
@@ -90,6 +113,20 @@ body {
   font-size: 16px;
   font-weight: 700;
   background: linear-gradient(180deg, #ceb260 0%, #897846 100%);
+}
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  padding: 12px 12px;
+  border-radius: 12px !important;
+  font-size: 16px;
+  height: 45px;
+  font-weight: 700;
+  border: 2px solid #2d3c68;
+  color: #2d3c68 !important;
+  background-color: #d8ddee !important;
+  line-height: 20px;
+  border-color: #2d3c68 !important;
 }
 .txt-nav-p {
   font-family: "sukhumvit_setbold";
@@ -131,6 +168,19 @@ body {
   border-radius: 16px !important;
   background: rgba(255, 255, 255, 1);
   margin-bottom: 15px;
+}
+.box {
+  width: 100%;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 1);
+  margin-bottom: 15px;
+}
+.box .txt-section {
+  font-size: 24px !important;
+  font-family: "sukhumvit_setbold";
+  font-weight: 700;
 }
 p {
   font-family: "sukhumvit_settext";
@@ -244,6 +294,24 @@ input[type="radio"]:checked + label span {
   font-weight: 700;
 }
 
+.text--left {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "sukhumvit_setsemi_bold";
+  width: 20%;
+  margin-bottom: 15px;
+}
+.text--rigth {
+  color: #808080 !important;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "sukhumvit_settext";
+  width: 80%;
+  margin-bottom: 15px;
+  line-height: 25.39px;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -268,5 +336,14 @@ input[type="radio"]:checked + label span {
   }
   .width-min {
     width: 50px;
+  }
+  .text--rigth,
+  .text--left {
+    width: 100% !important;
+  }
+
+  .text--left {
+    margin-bottom: 0;
+    font-size: 20px;
   }
 }
